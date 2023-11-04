@@ -14,4 +14,4 @@ for number in range(a, b + 1):
     else:
         if len(divisors) != 4:
             continue
-        print(number, "|", " ".join(map(str, reversed(divisors))))
+        print(number, "|", " ".join(map(str, sorted(divisors, reverse=True))))
