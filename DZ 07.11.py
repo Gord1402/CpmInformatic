@@ -12,6 +12,6 @@ for number in range(a, b + 1):
             if number // divider != divider:
                 divisors.append(number // divider)
     else:
-        if len(divisors) < 4:
+        if len(divisors) != 4:
             continue
         print(number, "|", " ".join(map(str, reversed(divisors))))
